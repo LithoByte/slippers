@@ -8,35 +8,30 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Slippers'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Slippers.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.version          = '0.0.1'
+  s.summary          = 'Slippers provides some simple types that make working with network calls easier.'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Slippers adds some structure around common networking tasks like refreshing, paging, and json parsing.
+  
+  Specifically, it provides:
+  - A protocol called Refreshable which requires a `refresh` function
+  - A functional implementation of Refreshable
+  - A 'meta' refresher class which will accept bunch of refreshables and refresh all of them on command
+  - A protocol called Pageable which requires `nextPage` and `fetchPage` functions
+  - A functional implementation of Pageable + Refreshable that manages the page number for you
+  - An extension to Pageable that can be used with `UITableViewDelegate`s to simplify infinite lists
+  - An array extension that allows you to use a simple array to simulate paginated batches of elements
+  - A class that makes a single JSONEncoder and JSONDecoder available throughout your project with smart defaults set on them
+  - A ID class that you can use transparently for integer server ids which helps enforce type consistency when passed around
                        DESC
 
-  s.homepage         = 'https://github.com/Elliot/Slippers'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/ThryvInc/slippers'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Elliot' => 'elliot.schrock@gmail.com' }
-  s.source           = { :git => 'https://github.com/Elliot/Slippers.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Elliot Schrock' => '' }
+  s.source           = { :git => 'https://github.com/ThryvInc/slippers.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/elliot_schrock'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'Slippers/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Slippers' => ['Slippers/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
