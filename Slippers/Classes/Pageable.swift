@@ -26,7 +26,7 @@ public extension Pageable {
     }
 }
 
-public class Pager: Refreshable, Pageable {
+open class Pager: Refreshable, Pageable {
     public var page: Int {
         didSet {
             onPageUpdate?(page)
