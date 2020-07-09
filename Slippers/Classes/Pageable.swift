@@ -32,7 +32,7 @@ open class Pager: Refreshable, Pageable {
             onPageUpdate?(page)
         }
     }
-    private let firstPageValue: Int
+    public var firstPageValue: Int
     public var onPageUpdate: ((Int) -> Void)?
     
     public init(firstPageValue: Int = 0, onPageUpdate: ((Int) -> Void)?) {
