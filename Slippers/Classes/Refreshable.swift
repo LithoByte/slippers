@@ -18,13 +18,13 @@ open class Refresher: Refreshable {
         self.onRefresh = onRefresh
     }
     
-    public func refresh() {
+    open func refresh() {
         onRefresh?()
     }
 }
 
 open class MetaRefresher: Refreshable {
-    open var refreshers: [Refreshable]
+    public var refreshers: [Refreshable]
     
     public init(_ refreshers: Refreshable...) {
         self.refreshers = refreshers
@@ -34,7 +34,7 @@ open class MetaRefresher: Refreshable {
         self.refreshers = refreshers
     }
     
-    public func refresh() {
+    open func refresh() {
         refreshers.forEach { $0.refresh() }
     }
 }
