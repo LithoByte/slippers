@@ -76,6 +76,8 @@ class JsonTests: XCTestCase {
 //        let birthDateString = "1985-01-025T00:00:00Z"
 //        let json = "{\"birth_date\":\"\(birthDateString)\"}"
 //
+//        JsonProvider.forceDecode(Human.self, from: json.data(using: .utf8)!)
+//        XCTFail()
 //        XCTAssertThrowsError(JsonProvider.forceDecode(Human.self, from: json.data(using: .utf8)!))
 //    }
 //
