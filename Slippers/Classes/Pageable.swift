@@ -24,6 +24,17 @@ public extension Pageable {
             }
         }
     }
+    func willDisplayFunction(pageSize: Int = 20, pageTrigger: Int = 4) -> (UICollectionView, UICollectionViewCell, IndexPath) -> Void {
+        return { (collectionView: UICollectionView, cell: UICollectionViewCell, indexPath: IndexPath) in
+            let previousIndexPath = IndexPath(item: indexPath.item - 1, section: indexPath.section)
+            if collectionView.indexPathsForVisibleItems.contains(previousIndexPath) == true {
+                let numberOfRows = collectionView.numberOfItems(inSection: indexPath.section)
+                if numberOfRows - indexPath.item == pageTrigger && numberOfRows % pageSize == 0  {
+                    self.nextPage()
+                }
+            }
+        }
+    }
 }
 
 open class Pager: Refreshable, Pageable {

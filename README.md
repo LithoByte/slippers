@@ -14,6 +14,7 @@ Specifically, it provides:
 - A protocol called `Pageable` which requires `nextPage` and `fetchPage` functions
 - A functional implementation of `Pageable` + `Refreshable` that manages the page number for you
 - An extension to `Pageable` that can be used with `UITableViewDelegate`s to simplify infinite lists
+- An extension to `Pageable` that can be used with `UICollectionViewDelegate`s to simplify infinite lists
 - An array extension that allows you to use a simple array to simulate paginated batches of elements
 - A class that makes a single `JSONEncoder` and `JSONDecoder` available throughout your project with smart defaults set on them
 - An `ID` class that you can use transparently for integer server ids which helps enforce type consistency when passed around
