@@ -17,7 +17,7 @@ Specifically, it provides:
 - An extension to `Pageable` that can be used with `UICollectionViewDelegate`s to simplify infinite lists
 - An array extension that allows you to use a simple array to simulate paginated batches of elements
 - A class that makes a single `JSONEncoder` and `JSONDecoder` available throughout your project with smart defaults set on them
-- An `ID` class that you can use transparently for integer server ids which helps enforce type consistency when passed around
+- An `Id` class that you can use transparently for integer server ids which helps enforce type consistency when passed around
 
 ## Installation
 

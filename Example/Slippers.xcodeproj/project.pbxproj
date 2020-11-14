@@ -11,6 +11,7 @@
 		492DF88624B4B23500E0822D /* PagingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492DF88524B4B23500E0822D /* PagingTests.swift */; };
 		492DF88824B4B24000E0822D /* RefreshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492DF88724B4B24000E0822D /* RefreshTests.swift */; };
 		492DF88A24B4B26500E0822D /* JsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492DF88924B4B26500E0822D /* JsonTests.swift */; };
+		49315DD2255F68BF00B1262B /* IdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49315DD1255F68BF00B1262B /* IdTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		492DF88724B4B24000E0822D /* RefreshTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTests.swift; sourceTree = "<group>"; };
 		492DF88924B4B26500E0822D /* JsonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonTests.swift; sourceTree = "<group>"; };
 		492DF88B24B4EFAD00E0822D /* config.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; name = config.yml; path = ../.circleci/config.yml; sourceTree = "<group>"; };
+		49315DD1255F68BF00B1262B /* IdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdTests.swift; sourceTree = "<group>"; };
 		4E5A9023334BCF54E8C4C401 /* Pods-Slippers_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slippers_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Slippers_Tests/Pods-Slippers_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5082911F95E4627B2686E4E0 /* Pods-Slippers_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slippers_Example.release.xcconfig"; path = "Target Support Files/Pods-Slippers_Example/Pods-Slippers_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Slippers_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slippers_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +150,7 @@
 				492DF88524B4B23500E0822D /* PagingTests.swift */,
 				492DF88724B4B24000E0822D /* RefreshTests.swift */,
 				492DF88924B4B26500E0822D /* JsonTests.swift */,
+				49315DD1255F68BF00B1262B /* IdTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 			files = (
 				492DF88424B4B22600E0822D /* ArrayPagingTests.swift in Sources */,
 				492DF88624B4B23500E0822D /* PagingTests.swift in Sources */,
+				49315DD2255F68BF00B1262B /* IdTests.swift in Sources */,
 				492DF88824B4B24000E0822D /* RefreshTests.swift in Sources */,
 				492DF88A24B4B26500E0822D /* JsonTests.swift in Sources */,
 			);

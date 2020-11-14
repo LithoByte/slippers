@@ -72,20 +72,18 @@ class JsonTests: XCTestCase {
         }
     }
     
-//    func testForceDecodeMissingError() {
-//        let birthDateString = "1985-01-025T00:00:00Z"
-//        let json = "{\"birth_date\":\"\(birthDateString)\"}"
-//
-//        JsonProvider.forceDecode(Human.self, from: json.data(using: .utf8)!)
-//        XCTFail()
-//        XCTAssertThrowsError(JsonProvider.forceDecode(Human.self, from: json.data(using: .utf8)!))
-//    }
-//
-//    func testForceDecodeWrongError() {
-//        let json = "{\"first_name\":\"Neo\",\"birth_date\":\"Neo\"}"
-//
-//        XCTAssertThrowsError(JsonProvider.forceDecode(Human.self, from: json.data(using: .utf8)!))
-//    }
+    func testForceDecodeMissingError() {
+        let birthDateString = "1985-01-025T00:00:00Z"
+        let json = "{\"birth_date\":\"\(birthDateString)\"}"
+
+        XCTAssertThrowsError(try JsonProvider.forceDecode(Human.self, from: json.data(using: .utf8)!))
+    }
+
+    func testForceDecodeWrongError() {
+        let json = "{\"first_name\":\"Neo\",\"birth_date\":\"Neo\"}"
+
+        XCTAssertThrowsError(try JsonProvider.forceDecode(Human.self, from: json.data(using: .utf8)!))
+    }
 }
 
 struct Human: Codable {

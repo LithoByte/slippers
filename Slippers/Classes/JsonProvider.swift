@@ -33,11 +33,11 @@ public class JsonProvider {
         return try? jsonDecoder.decode(T.self, from: data)
     }
     
-    public static func forceEncode<T>(_ value: T) -> Data? where T: Encodable {
-        return try! jsonEncoder.encode(value)
+    public static func forceEncode<T>(_ value: T) throws -> Data? where T: Encodable {
+        return try jsonEncoder.encode(value)
     }
     
-    public static func forceDecode<T>(_ type: T.Type, from data: Data) -> T? where T: Decodable {
-        return try! jsonDecoder.decode(T.self, from: data)
+    public static func forceDecode<T>(_ type: T.Type, from data: Data) throws -> T? where T: Decodable {
+        return try jsonDecoder.decode(T.self, from: data)
     }
 }

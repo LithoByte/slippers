@@ -7,18 +7,48 @@
 
 import Foundation
 
-public struct ID<Type>: Codable, Hashable {
-    public let value: Int
+protocol Ided {
+    var id: Id<Self> { get }
+}
+
+public struct Id<Type>: Codable, Hashable, RawRepresentable {
+    public let rawValue: Int
     
-    public init(value: Int) {
-        self.value = value
+    public init(rawValue: Int) {
+        self.rawValue = rawValue
     }
 
     public init(from decoder: Decoder) throws {
-        value = try Int(from: decoder)
+        rawValue = try Int(from: decoder)
     }
 
     public func encode(to encoder: Encoder) throws {
-        try value.encode(to: encoder)
+        try rawValue.encode(to: encoder)
+    }
+}
+
+extension Id: CustomPlaygroundDisplayConvertible {
+  public var playgroundDescription: Any {
+    return self.rawValue
+  }
+}
+
+extension Id: Comparable {
+    public static func < (lhs: Id<Type>, rhs: Id<Type>) -> Bool {
+        return lhs.rawValue < rhs.rawValue
+    }
+}
+extension Id: Equatable {}
+
+extension Id: ExpressibleByIntegerLiteral {
+  public init(integerLiteral: IntegerLiteralType) {
+    self.init(rawValue: RawValue(integerLiteral: integerLiteral))
+  }
+}
+
+@available(iOS 13, *)
+extension Id: Identifiable {
+    public var id: Int {
+        return rawValue
     }
 }
