@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Slippers'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Slippers provides some simple types that make working with network calls easier.'
   s.swift_versions   = ['4.0', '4.1', '4.2', '5.0', '5.1', '5.2', '5.3']
   s.description      = <<-DESC

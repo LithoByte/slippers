@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Ided {
+public protocol Ided {
     var id: Id<Self> { get }
 }
 
@@ -38,6 +38,7 @@ extension Id: Comparable {
         return lhs.rawValue < rhs.rawValue
     }
 }
+
 extension Id: Equatable {}
 
 extension Id: ExpressibleByIntegerLiteral {
