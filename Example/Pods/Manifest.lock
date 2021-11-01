@@ -1,10 +1,10 @@
 PODS:
-  - Nimble (7.3.4)
+  - Nimble (9.2.1)
   - Quick (1.2.0)
-  - Slippers (0.1.0)
+  - Slippers (0.1.1)
 
 DEPENDENCIES:
-  - Nimble (~> 7.0)
+  - Nimble (~> 9.2)
   - Quick (~> 1.2.0)
   - Slippers (from `../`)
 
@@ -18,10 +18,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  Slippers: 3638b45cd4b0d928df24666c27cabb85dfad9edf
+  Slippers: 3814c93fd93305f918a984e724d5db4d9569a660
 
-PODFILE CHECKSUM: 46fb21d5a918cbdd071320e1d88b5342cfff47ab
+PODFILE CHECKSUM: 25dbb8e74d48e3dd26f1ee18bfd059d7cda5102a
 
-COCOAPODS: 1.9.0
+COCOAPODS: 1.11.2

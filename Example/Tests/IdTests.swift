@@ -29,6 +29,24 @@ class IdTests: XCTestCase {
     }
 }
 
+class IdStringTests: XCTestCase {
+    func testIdentifiable() {
+        let user = User(id: "123")
+        
+        XCTAssertEqual(user.id, User(id: "123").id)
+    }
+    
+    func testComparable() {
+        let user = User(id: "b")
+        
+        XCTAssertTrue(user.id > User(id: "a").id)
+    }
+}
+
 struct Post: Identifiable {
-    let id: Id<Post>
+    let id: Id<Post, Int>
+}
+
+struct User: Identifiable {
+    let id: Id<User, String>
 }
