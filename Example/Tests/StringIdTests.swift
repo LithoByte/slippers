@@ -19,7 +19,7 @@ class StringIdTests: XCTestCase {
     func testComparable() {
         let post = Post(id: "a")
 
-        XCTAssertTrue(post.id < Post(id: "a").id)
+        XCTAssertTrue(post.id < Post(id: "b").id)
     }
     
     func testEquatable() {
