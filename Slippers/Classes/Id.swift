@@ -6,23 +6,19 @@
 //
 
 import Foundation
-
-public typealias Idable = Codable & Comparable & Hashable
-
 public protocol Ided {
-    associatedtype IdType: Idable
-    var id: Id<Self, IdType> { get }
+    var id: Id<Self> { get }
 }
 
-public struct Id<Type, IdType: Idable>: Codable, Hashable, RawRepresentable {
-    public let rawValue: IdType
+public struct Id<Type>: Codable, Hashable, RawRepresentable {
+    public let rawValue: Int
     
-    public init(rawValue: IdType) {
+    public init(rawValue: Int) {
         self.rawValue = rawValue
     }
 
     public init(from decoder: Decoder) throws {
-        rawValue = try IdType(from: decoder)
+        rawValue = try Int(from: decoder)
     }
 
     public func encode(to encoder: Encoder) throws {
@@ -37,32 +33,22 @@ extension Id: CustomPlaygroundDisplayConvertible {
 }
 
 extension Id: Comparable {
-    public static func < (lhs: Id<Type, IdType>, rhs: Id<Type, IdType>) -> Bool {
+    public static func < (lhs: Id<Type>, rhs: Id<Type>) -> Bool {
         return lhs.rawValue < rhs.rawValue
     }
 }
 
 extension Id: Equatable {}
 
-extension Id: ExpressibleByIntegerLiteral where IdType == Int {
+extension Id: ExpressibleByIntegerLiteral {
   public init(integerLiteral: IntegerLiteralType) {
     self.init(rawValue: RawValue(integerLiteral: integerLiteral))
   }
 }
 
-extension Id: ExpressibleByStringLiteral, ExpressibleByUnicodeScalarLiteral, ExpressibleByExtendedGraphemeClusterLiteral where IdType == String {
-    public typealias ExtendedGraphemeClusterLiteralType = String
-    public typealias UnicodeScalarLiteralType = String
-    
-    
-    public init(stringLiteral value: StringLiteralType) {
-        self.init(rawValue: String(stringLiteral: value))
-    }
-}
-
 @available(iOS 13, *)
 extension Id: Identifiable {
-    public var id: IdType {
+    public var id: Int {
         return rawValue
     }
 }
