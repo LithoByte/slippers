@@ -28,6 +28,18 @@
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "Slippers/Classes/**/*",
+  "source_files": [
+    "Slippers/Classes/Core/*",
+    "Slippers/Classes/Id/*"
+  ],
+  "subspecs": [
+    {
+      "name": "StringId",
+      "source_files": [
+        "Slippers/Classes/Core/*",
+        "Slippers/Classes/StringId/*"
+      ]
+    }
+  ],
   "swift_version": "5.3"
 }

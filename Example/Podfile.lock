@@ -1,7 +1,9 @@
 PODS:
   - Nimble (9.2.1)
   - Quick (1.2.0)
-  - Slippers (0.1.1)
+  - Slippers (0.1.1):
+    - Slippers/StringId (= 0.1.1)
+  - Slippers/StringId (0.1.1)
 
 DEPENDENCIES:
   - Nimble (~> 9.2)
@@ -20,7 +22,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  Slippers: 3814c93fd93305f918a984e724d5db4d9569a660
+  Slippers: 2ef18395155a2d8c6aed87fe0411c80f76744369
 
 PODFILE CHECKSUM: 25dbb8e74d48e3dd26f1ee18bfd059d7cda5102a
 

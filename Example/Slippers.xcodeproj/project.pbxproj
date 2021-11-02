@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		236EC9EB2731DC490037CD4C /* StringIdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236EC9EA2731DC490037CD4C /* StringIdTests.swift */; };
 		492DF88424B4B22600E0822D /* ArrayPagingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492DF88324B4B22600E0822D /* ArrayPagingTests.swift */; };
 		492DF88624B4B23500E0822D /* PagingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492DF88524B4B23500E0822D /* PagingTests.swift */; };
 		492DF88824B4B24000E0822D /* RefreshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492DF88724B4B24000E0822D /* RefreshTests.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		1E8D62A61BA58C7FB549D6DA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		236EC9EA2731DC490037CD4C /* StringIdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringIdTests.swift; sourceTree = "<group>"; };
 		2CCCA0E55DDB1798A5654594 /* Pods-Slippers_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slippers_Tests.release.xcconfig"; path = "Target Support Files/Pods-Slippers_Tests/Pods-Slippers_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3C90477F8349269CDBCA8A4B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		476F55AF142F3D7835C84F56 /* Slippers.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Slippers.podspec; path = ../Slippers.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -151,6 +153,7 @@
 				492DF88724B4B24000E0822D /* RefreshTests.swift */,
 				492DF88924B4B26500E0822D /* JsonTests.swift */,
 				49315DD1255F68BF00B1262B /* IdTests.swift */,
+				236EC9EA2731DC490037CD4C /* StringIdTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				492DF88424B4B22600E0822D /* ArrayPagingTests.swift in Sources */,
+				236EC9EB2731DC490037CD4C /* StringIdTests.swift in Sources */,
 				492DF88624B4B23500E0822D /* PagingTests.swift in Sources */,
 				49315DD2255F68BF00B1262B /* IdTests.swift in Sources */,
 				492DF88824B4B24000E0822D /* RefreshTests.swift in Sources */,
