@@ -25,6 +25,11 @@ jobs:
           environment:
             SCAN_DEVICE: iPhone 11
             SCAN_SCHEME: Slippers-Example
+            
+      #Install cocoapods in StringId Example
+      - run:
+          name: Install CocoaPods (StringId)
+          command: cd SlippersStringId && pod install
       - run:
           name: Build and run tests in StringIdExample
           command: cd SlippersStringId && fastlane scan
