@@ -1,13 +1,4 @@
 //
-//  StringId.swift
-//  Slippers
-//
-//  Created by Calvin Collins on 11/2/21.
-//
-
-import Foundation
-
-//
 //  Id.swift
 //  LUX
 //
@@ -16,7 +7,7 @@ import Foundation
 
 import Foundation
 
-public struct StringId<Type>: Codable, Hashable, RawRepresentable {
+public struct Id<Type>: Codable, Hashable, RawRepresentable {
     public let rawValue: String
     
     public init(rawValue: String) {
@@ -32,21 +23,21 @@ public struct StringId<Type>: Codable, Hashable, RawRepresentable {
     }
 }
 
-extension StringId: CustomPlaygroundDisplayConvertible {
+extension Id: CustomPlaygroundDisplayConvertible {
   public var playgroundDescription: Any {
     return self.rawValue
   }
 }
 
-extension StringId: Comparable {
-    public static func < (lhs: StringId<Type>, rhs: StringId<Type>) -> Bool {
+extension Id: Comparable {
+    public static func < (lhs: Id<Type>, rhs: Id<Type>) -> Bool {
         return lhs.rawValue < rhs.rawValue
     }
 }
 
-extension StringId: Equatable {}
+extension Id: Equatable {}
 
-extension StringId: ExpressibleByStringLiteral {
+extension Id: ExpressibleByStringLiteral {
     public typealias StringLiteralType = String
     
     public init(stringLiteral value: String) {
@@ -55,9 +46,8 @@ extension StringId: ExpressibleByStringLiteral {
 }
 
 @available(iOS 13, *)
-extension StringId: Identifiable {
+extension Id: Identifiable {
     public var id: String {
         return rawValue
     }
 }
-

@@ -1,14 +1,14 @@
 PODS:
   - Nimble (9.2.1)
   - Quick (1.2.0)
-  - Slippers (0.1.1):
-    - Slippers/StringId (= 0.1.1)
-  - Slippers/StringId (0.1.1)
+  - Slippers/Core (0.1.1)
+  - Slippers/IntId (0.1.1):
+    - Slippers/Core
 
 DEPENDENCIES:
   - Nimble (~> 9.2)
   - Quick (~> 1.2.0)
-  - Slippers (from `../`)
+  - Slippers/IntId (from `..`)
 
 SPEC REPOS:
   trunk:
@@ -17,13 +17,13 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   Slippers:
-    :path: "../"
+    :path: ".."
 
 SPEC CHECKSUMS:
   Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  Slippers: 2ef18395155a2d8c6aed87fe0411c80f76744369
+  Slippers: 5a3c6f24a556a59a091e2cb60e588472827be87c
 
-PODFILE CHECKSUM: 25dbb8e74d48e3dd26f1ee18bfd059d7cda5102a
+PODFILE CHECKSUM: de19c5e6451f8f36b3d7ed1284c765bfb51227f4
 
 COCOAPODS: 1.11.2

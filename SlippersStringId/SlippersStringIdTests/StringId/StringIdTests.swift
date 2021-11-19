@@ -30,5 +30,5 @@ class StringIdTests: XCTestCase {
 }
 
 private struct Post: Identifiable {
-    let id: StringId<Post>
+    let id: Id<Post>
 }

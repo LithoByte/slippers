@@ -1,0 +1,18 @@
+PODS:
+  - Slippers/Core (0.1.1)
+  - Slippers/StringId (0.1.1):
+    - Slippers/Core
+
+DEPENDENCIES:
+  - Slippers/StringId (from `..`)
+
+EXTERNAL SOURCES:
+  Slippers:
+    :path: ".."
+
+SPEC CHECKSUMS:
+  Slippers: 5a3c6f24a556a59a091e2cb60e588472827be87c
+
+PODFILE CHECKSUM: 95a0534dce1d69c857da1de8a98bdb1703bf1f35
+
+COCOAPODS: 1.11.2

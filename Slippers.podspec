@@ -34,9 +34,21 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'Slippers/Classes/Core/*', 'Slippers/Classes/Id/*'
+  s.source_files = 'Slippers/Classes/**/*.swift'
   
+  s.default_subspecs = 'IntId'
+  
+  s.subspec 'IntId' do |sp|
+    sp.source_files = 'Slippers/Classes/Id/*.swift'
+    sp.dependency 'Slippers/Core'
+  end
+  
+  s.subspec 'Core' do |sp|
+    sp.source_files = 'Slippers/Classes/Core/*.swift'
+  end
+
   s.subspec "StringId" do |sp|
-    sp.source_files = 'Slippers/Classes/Core/*', 'Slippers/Classes/StringId/*'
+    sp.source_files = 'Slippers/Classes/StringId/*.swift'
+    sp.dependency 'Slippers/Core'
   end
 end

@@ -1,0 +1,6 @@
+module Pods_SlippersStringId {
+  umbrella header "Pods-SlippersStringId-umbrella.h"
+
+  export *
+  module * { export * }
+}

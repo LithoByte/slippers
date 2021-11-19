@@ -1,0 +1,6 @@
+module Slippers {
+  umbrella header "Slippers-umbrella.h"
+
+  export *
+  module * { export * }
+}
