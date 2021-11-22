@@ -1,4 +1,4 @@
-module Slippers {
+framework module Slippers {
   umbrella header "Slippers-umbrella.h"
 
   export *
