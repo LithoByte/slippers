@@ -6,7 +6,6 @@
 //
 
 import Foundation
-
 public protocol Ided {
     var id: Id<Self> { get }
 }

@@ -1,0 +1,9 @@
+use_frameworks!
+
+target 'SlippersStringId' do
+  pod 'Slippers/StringId', :path => '..'
+  
+  target 'SlippersStringIdTests' do
+    inherit! :search_paths
+  end
+end

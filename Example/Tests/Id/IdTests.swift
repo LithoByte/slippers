@@ -29,6 +29,6 @@ class IdTests: XCTestCase {
     }
 }
 
-struct Post: Identifiable {
+private struct Post: Identifiable {
     let id: Id<Post>
 }
