@@ -14,17 +14,17 @@ jobs:
       - checkout
 
       # Install CocoaPods
-      - run:
-          name: Install CocoaPods
-          command: cd Example && pod install
-
-      # Build the example app and run tests
-      - run:
-          name: Build and run tests in Example
-          command: cd Example && fastlane scan
-          environment:
-            SCAN_DEVICE: iPhone 11
-            SCAN_SCHEME: Slippers-Example
+#      - run:
+#          name: Install CocoaPods
+#          command: cd Example && pod install
+#
+#      # Build the example app and run tests
+#      - run:
+#          name: Build and run tests in Example
+#          command: cd Example && fastlane scan
+#          environment:
+#            SCAN_DEVICE: iPhone 11
+#            SCAN_SCHEME: Slippers-Example
             
       #Install cocoapods in StringId Example
       - run:
