@@ -12,30 +12,30 @@ jobs:
 
     steps:
       - checkout
-#
-#      # Install CocoaPods
-#      - run:
-#          name: Install CocoaPods
-#          command: cd Example && pod install
-#
-#      # Build the example app and run tests
-#      - run:
-#          name: Build and run tests in Example
-#          command: cd Example && fastlane scan
-#          environment:
-#            SCAN_DEVICE: iPhone 11
-#            SCAN_SCHEME: Slippers-Example
-#
-      #Install cocoapods in StringId Example
+
+      # Install CocoaPods
       - run:
-          name: Install CocoaPods (StringId)
-          command: cd SlippersStringId && pod install
+          name: Install CocoaPods
+          command: cd Example && pod install
+
+      # Build the example app and run tests
       - run:
-          name: Build and run tests in StringIdExample
-          command: cd SlippersStringId && fastlane scan
+          name: Build and run tests in Example
+          command: cd Example && fastlane scan
           environment:
             SCAN_DEVICE: iPhone 11
-            SCAN_SCHEME: SlippersStringId
+            SCAN_SCHEME: Slippers-Example
+
+#      #Install cocoapods in StringId Example
+#      - run:
+#          name: Install CocoaPods (StringId)
+#          command: cd SlippersStringId && pod install
+#      - run:
+#          name: Build and run tests in StringIdExample
+#          command: cd SlippersStringId && fastlane scan
+#          environment:
+#            SCAN_DEVICE: iPhone 11
+#            SCAN_SCHEME: SlippersStringId
 
       # Collect XML test results data to show in the UI,
       # and save the same XML files under test-results folder
