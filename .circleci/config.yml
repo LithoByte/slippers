@@ -12,6 +12,11 @@ jobs:
 
     steps:
       - checkout
+      
+      # Update CocoaPods
+      - run:
+          name: Install CocoaPods
+          command: gem install cocoapods
 
       # Install CocoaPods
       - run:
@@ -26,16 +31,16 @@ jobs:
             SCAN_DEVICE: iPhone 11
             SCAN_SCHEME: Slippers-Example
 
-#      #Install cocoapods in StringId Example
-#      - run:
-#          name: Install CocoaPods (StringId)
-#          command: cd SlippersStringId && pod install
-#      - run:
-#          name: Build and run tests in StringIdExample
-#          command: cd SlippersStringId && fastlane scan
-#          environment:
-#            SCAN_DEVICE: iPhone 11
-#            SCAN_SCHEME: SlippersStringId
+      #Install cocoapods in StringId Example
+      - run:
+          name: Install CocoaPods (StringId)
+          command: cd SlippersStringId && pod install
+      - run:
+          name: Build and run tests in StringIdExample
+          command: cd SlippersStringId && fastlane scan
+          environment:
+            SCAN_DEVICE: iPhone 11
+            SCAN_SCHEME: SlippersStringId
 
       # Collect XML test results data to show in the UI,
       # and save the same XML files under test-results folder
