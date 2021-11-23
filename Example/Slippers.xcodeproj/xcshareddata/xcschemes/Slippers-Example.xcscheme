@@ -34,20 +34,6 @@
                ReferencedContainer = "container:Slippers.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "236ECA2B2735FCD50037CD4C"
-               BuildableName = "Slippers_StringId_Tests.xctest"
-               BlueprintName = "Slippers_StringId_Tests"
-               ReferencedContainer = "container:Slippers.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -79,16 +65,6 @@
                   Identifier = "StringIdTests">
                </Test>
             </SkippedTests>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "236ECA2B2735FCD50037CD4C"
-               BuildableName = "Slippers_StringId_Tests.xctest"
-               BlueprintName = "Slippers_StringId_Tests"
-               ReferencedContainer = "container:Slippers.xcodeproj">
-            </BuildableReference>
          </TestableReference>
       </Testables>
    </TestAction>
