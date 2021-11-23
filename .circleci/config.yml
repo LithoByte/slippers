@@ -16,7 +16,7 @@ jobs:
       # Update CocoaPods
       - run:
           name: Install CocoaPods
-          command: gem install cocoapods
+          command: sudo gem install cocoapods
 
       # Install CocoaPods
       - run:
