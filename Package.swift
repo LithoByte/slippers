@@ -11,6 +11,8 @@ let package = Package(
         .library(
             name: "Slippers",
             targets: ["Slippers"]),
+        .library(name: "Slippers/Id", targets: ["Slippers", "IntId"]),
+        .library(name: "Slippers/StringId", targets: ["Slippers", "StringId"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -22,7 +24,16 @@ let package = Package(
         .target(
             name: "Slippers",
             dependencies: [],
-            path: "Sources/Slippers/Classes/Core"),
+            path: "Sources/Slippers/Classes/Core"
+        ),
+        .target(
+            name: "IntId",
+            path: "Sources/Slippers/Classes/Id"
+        ),
+        .target(
+            name: "StringId",
+            path: "Sources/Slippers/Classes/StringId"
+        ),
         .testTarget(
             name: "slippersTests",
             dependencies: ["Slippers"])
