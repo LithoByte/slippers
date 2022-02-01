@@ -169,7 +169,7 @@
 		020AA0FB4B8D0AABB407439457B50A58 /* Await.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Await.swift; path = Sources/Nimble/Utils/Await.swift; sourceTree = "<group>"; };
 		0373F7ADD3C4F57888B1A588BDCE19CE /* Pods-Slippers_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Slippers_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		066CBAAD3990BDE5C8F62B5981E1CC66 /* Pods-Slippers_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Slippers_Example-Info.plist"; sourceTree = "<group>"; };
-		07305FFB4B95A7FA676AB3F44C9B10CE /* Array+Paging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Paging.swift"; path = "Slippers/Classes/Core/Array+Paging.swift"; sourceTree = "<group>"; };
+		07305FFB4B95A7FA676AB3F44C9B10CE /* Array+Paging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Paging.swift"; sourceTree = "<group>"; };
 		077B1C69D27228F889A523678CEF0990 /* HaveCount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HaveCount.swift; path = Sources/Nimble/Matchers/HaveCount.swift; sourceTree = "<group>"; };
 		07B7394FFF575706978C826AEB1836E4 /* Pods-Slippers_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Slippers_Tests-Info.plist"; sourceTree = "<group>"; };
 		091415EADC607EDF5A2AD0504EF95826 /* SatisfyAllOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SatisfyAllOf.swift; path = Sources/Nimble/Matchers/SatisfyAllOf.swift; sourceTree = "<group>"; };
@@ -291,7 +291,7 @@
 		D81C86819E443E6D29724266097C4ED4 /* Nimble-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-umbrella.h"; sourceTree = "<group>"; };
 		DA49EA7F16619C69CF17BB5CF3F20690 /* Slippers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Slippers.debug.xcconfig; sourceTree = "<group>"; };
 		DB79E75738F9E730736047B92E676C5E /* Equal+Tuple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Equal+Tuple.swift"; path = "Sources/Nimble/Matchers/Equal+Tuple.swift"; sourceTree = "<group>"; };
-		DC7A1F007DB9B51FFD2B745ACE120389 /* JsonProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JsonProvider.swift; path = Slippers/Classes/Core/JsonProvider.swift; sourceTree = "<group>"; };
+		DC7A1F007DB9B51FFD2B745ACE120389 /* JsonProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JsonProvider.swift; sourceTree = "<group>"; };
 		DCF1A13B7AAC35F34929478BC8B93FBB /* Quick.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Quick.h; path = Sources/QuickObjectiveC/Quick.h; sourceTree = "<group>"; };
 		DD6A62D478BF98A9FE15D8780B591816 /* DSL+Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DSL+Wait.swift"; path = "Sources/Nimble/DSL+Wait.swift"; sourceTree = "<group>"; };
 		DEDD79A8FA7B0D0FC846A49F0615449E /* Pods-Slippers_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Slippers_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -309,16 +309,16 @@
 		E904AAC31A9DB50BAA9F2097EE0BBA5A /* BeVoid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeVoid.swift; path = Sources/Nimble/Matchers/BeVoid.swift; sourceTree = "<group>"; };
 		EA9E3DA516E4FF8DD73F3182394DF84C /* Nimble-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Nimble-dummy.m"; sourceTree = "<group>"; };
 		EAE3F3B6217F2A8C26A9525D948E37D8 /* CwlCatchException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CwlCatchException.m; path = Carthage/Checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/CwlCatchException.m; sourceTree = "<group>"; };
-		EB107B1B3AA33C5F47401E316A4775BE /* Refreshable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Refreshable.swift; path = Slippers/Classes/Core/Refreshable.swift; sourceTree = "<group>"; };
+		EB107B1B3AA33C5F47401E316A4775BE /* Refreshable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Refreshable.swift; sourceTree = "<group>"; };
 		EB3390DE7394750BA9B79AEBB1C39914 /* BeAnInstanceOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAnInstanceOf.swift; path = Sources/Nimble/Matchers/BeAnInstanceOf.swift; sourceTree = "<group>"; };
 		ED3A0442308F636CB563BD14F0E80128 /* Nimble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nimble.debug.xcconfig; sourceTree = "<group>"; };
 		EEC2EDC49AFC6231887E5BB2E19450E1 /* QCKDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QCKDSL.h; path = Sources/QuickObjectiveC/DSL/QCKDSL.h; sourceTree = "<group>"; };
-		F09973C385CE8D6EB6D5B2F2409B320D /* Id.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Id.swift; path = Slippers/Classes/Id/Id.swift; sourceTree = "<group>"; };
+		F09973C385CE8D6EB6D5B2F2409B320D /* Id.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Id.swift; path = Sources/Slippers/Classes/Id/Id.swift; sourceTree = "<group>"; };
 		F273B8FF1E258784D54F7698FF168BA5 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/Nimble/Utils/Errors.swift; sourceTree = "<group>"; };
 		F387BF83076803D544B015D53C4F08D6 /* Pods-Slippers_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Slippers_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F38C86333334351ABE7C4EECBE1210DA /* FailureMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FailureMessage.swift; path = Sources/Nimble/FailureMessage.swift; sourceTree = "<group>"; };
 		F4E0C0997D3281BA0838D6D37830EB14 /* DSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSL.m; path = Sources/NimbleObjectiveC/DSL.m; sourceTree = "<group>"; };
-		F7B9E0D7D0D0E597BC3A5383DF891796 /* Pageable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pageable.swift; path = Slippers/Classes/Core/Pageable.swift; sourceTree = "<group>"; };
+		F7B9E0D7D0D0E597BC3A5383DF891796 /* Pageable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Pageable.swift; sourceTree = "<group>"; };
 		FAE2B13A3FC19FB9F8F0F29CC60514D2 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Sources/Quick/Configuration/Configuration.swift; sourceTree = "<group>"; };
 		FCC7C891C1379D59F939AAFF059FF4CB /* Pods-Slippers_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Slippers_Tests.modulemap"; sourceTree = "<group>"; };
 		FEE70A013D967F5E29ED35DFC9BC4372 /* Contain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contain.swift; path = Sources/Nimble/Matchers/Contain.swift; sourceTree = "<group>"; };
@@ -674,6 +674,7 @@
 				EB107B1B3AA33C5F47401E316A4775BE /* Refreshable.swift */,
 			);
 			name = Core;
+			path = Sources/Slippers/Classes/Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

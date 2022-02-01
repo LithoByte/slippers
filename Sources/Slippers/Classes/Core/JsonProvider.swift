@@ -5,6 +5,7 @@
 //  Created by Elliot Schrock on 10/13/18.
 //
 
+import Foundation
 import UIKit
 
 public class JsonProvider {
